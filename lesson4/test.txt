@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\PROJECTS\AlevelOOP_ONL3\lesson4\handling.py", line 20, in <module>
+    a = int(input("enter 'a':"))
+ValueError: invalid literal for int() with base 10: 'asdasdasdasa'
+

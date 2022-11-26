@@ -1,5 +1,9 @@
 from datetime import datetime
 
+from lesson4.examples import A
+
+COMPARE_PROP = 'age'
+
 
 class Human:
     def __init__(self, name, weight, height, age, sex):
@@ -37,7 +41,7 @@ class Human:
         return super().__getattribute__(item)
 
     def __lt__(self, other):
-        return self.age < other.age
+        return getattr(self, COMPARE_PROP) < getattr(other, COMPARE_PROP)
 
     def __le__(self, other):
         return self.age <= other.age

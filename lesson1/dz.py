@@ -2,10 +2,14 @@
 * Зробити можливим передавати температуру та шкалу в метод з п.2
 
 """
+from lesson2.dunders import Human
+from lesson4.myexc import MyOwnException
 
 
 class Element:
     def __init__(self, t_melt, t_boil):
+        if t_melt < -273:
+            raise MyOwnException(dict(t_melt=t_melt, t_boil=t_boil, reason="Too cold"))
         self.t_melt = t_melt
         self.t_boil = t_boil
 
