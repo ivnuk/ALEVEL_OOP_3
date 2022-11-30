@@ -2,7 +2,6 @@
 * Зробити можливим передавати температуру та шкалу в метод з п.2
 
 """
-from lesson2.dunders import Human
 from lesson4.myexc import MyOwnException
 
 
@@ -21,7 +20,8 @@ class Element:
             return "vapour"
         return "liquid"
 
-    def convert_temp(self, temp, scale="C"):
+    @staticmethod
+    def convert_temp(temp, scale="C"):
         if scale == 'K':
             return temp - 273
         if scale == "F":
@@ -43,5 +43,6 @@ class SuperElement(Element):
 
 if __name__ == '__main__':
     water = Element(0, 100)
+    print(Element.convert_temp(12, 'K'))
     print(water.convert_temp(150, 'F'))
     print(water.agg_state(150, 'F'))
