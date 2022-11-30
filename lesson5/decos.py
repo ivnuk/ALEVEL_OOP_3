@@ -1,3 +1,4 @@
+import functools
 import random
 import traceback
 from datetime import datetime
@@ -38,6 +39,7 @@ def execute_time(func):
 
 
 def logger_boy(func):
+    @functools.wraps(func)
     def wrapper(*args, **kwargs):
         result = None
         try:
