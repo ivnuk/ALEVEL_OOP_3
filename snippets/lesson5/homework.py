@@ -43,6 +43,8 @@ class Candidate:
                             main_skill=row['Main Skill'],
                             main_skill_grade=row['Main Skill Grade'])
                 res.append(cls(**data))
+                # cls(...) == Candidate(...)
+                # [obj, obj, obj]
         return res
 
 

@@ -20,6 +20,10 @@ class CSVGetter:
                 word = random.choice(words)
             return word
 
+    # csv getter --word--> game_process --> play
+    # api getter --word--> game_process --> play
+    # db getter --word--> game_process --> play
+
 
 class APIGetter:
     def get_random_word(self):

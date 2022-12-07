@@ -19,7 +19,7 @@ class GameProcess:
         return ''.join(hidden_word)
 
     def stop_game(self):
-        raise GameOver
+        raise GameOver(self.score)
 
     def validate_letter(self, letter):
         letter = letter.lower()
