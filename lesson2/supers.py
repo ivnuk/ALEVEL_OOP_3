@@ -17,3 +17,6 @@ class CustomDBUser(DBUser):
         self.last_update_at = datetime.datetime.now()
         return super(CustomDBUser, self).save()
 
+
+def some_fuction():
+    pass

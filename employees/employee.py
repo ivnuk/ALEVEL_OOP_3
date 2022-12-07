@@ -1,4 +1,13 @@
+"""
+Class Employee is used for ... living here.
+"""
+
+
 class Employee:
+    """
+    Main Employee functionality class
+    """
+
     def __init__(self, name, salary, email):
         self.name = name
         self.salary = salary
@@ -17,4 +26,3 @@ class Employee:
         4. Else: raise EmailAlreadyExistsException
         :return:
         """
-
