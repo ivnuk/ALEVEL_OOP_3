@@ -1,7 +1,5 @@
 from datetime import datetime
 
-from lesson4.examples import A
-
 COMPARE_PROP = 'age'
 
 

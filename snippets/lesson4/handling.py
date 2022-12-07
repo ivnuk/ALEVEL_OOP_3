@@ -1,8 +1,6 @@
 import traceback
 
-from lesson1.dz import Element
-
-from lesson4.myexc import MyOwnException
+from snippets.lesson4.myexc import MyOwnException
 
 
 class Calculate:

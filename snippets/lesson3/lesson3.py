@@ -6,14 +6,10 @@ order of importing
 3. Own modules
 """
 import datetime as dt
-import os
-import sys
-
-from requests import request
 
 # from lesson2.dunders import Human, COMPARE_PROP
 
-from lesson2 import dunders as dnd
+from snippets.lesson2 import dunders as dnd
 
 
 def some_func(a, b=None):

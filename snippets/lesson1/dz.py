@@ -2,7 +2,7 @@
 * Зробити можливим передавати температуру та шкалу в метод з п.2
 
 """
-from lesson4.myexc import MyOwnException
+from snippets.lesson4.myexc import MyOwnException
 
 
 class Element:

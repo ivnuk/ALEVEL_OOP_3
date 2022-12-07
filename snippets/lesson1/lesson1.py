@@ -1,6 +1,3 @@
-from lesson2.dunders import Human
-from lesson4.myexc import ThirdPartyServerException
-
 class Figure:
     pass
 
