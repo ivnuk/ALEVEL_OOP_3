@@ -1,7 +1,8 @@
 """
 3. Принцип підстановки Лісков
 
-Якщо об’єкт базового класу замінити об’єктом його похідного класу, то програма має продовжувати працювати коректно.
+Якщо об’єкт базового класу замінити об’єктом його похідного класу,
+то програма має продовжувати працювати коректно.
 """
 
 
@@ -72,9 +73,24 @@ class DBLogger(Logger):
         self._close_connection()
 
 
+class NOSQLDBLogger(DBLogger):
+    def __init__(self,db_url, some_param):
+        self.param = some_param
+        self.db_url = db_url
+
+    def change_message(self):
+        if self.param:
+            pass
+
+    def log(self, message):
+        message = self.change_message()
+#         save message here
+
 def main(logger):
     # some code
     logger.log('qweqweqwe')
+    a = NOSQLDBLogger('asdad', 'red')
+    a.log('hello')
     # some other code
 
 

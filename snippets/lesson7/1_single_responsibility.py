@@ -34,4 +34,11 @@ class AccessManager:
 
     def get_free_movies(self):
         movies = []
-        return [x for x in movies if x.subscription_type == SUBSRCIPTION_TYPES['basic']]
+        return [x for x in movies if
+                x.subscription_type == SUBSRCIPTION_TYPES['basic']]
+
+
+
+
+
+

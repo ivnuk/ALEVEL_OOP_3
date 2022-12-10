@@ -56,4 +56,4 @@ class Triangle(Figure):
 class FigureManager:
     @staticmethod
     def get_min_area(figures: List[Figure]):
-        return min(*[x.calculate_area for x in figures])
+        return min(*[x.calculate_area() for x in figures])

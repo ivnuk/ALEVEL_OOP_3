@@ -21,6 +21,13 @@ class EmailSender:
     def send(self, send_to, message):
         pass
 
+class BaseReader:
+    def get_users_to_notify(self):
+        raise NotImplementedError
+
+    def get_notification_text(self):
+        raise NotImplementedError
+
 
 class SQLReader:
     def get_users_to_notify(self):
