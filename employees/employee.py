@@ -12,6 +12,7 @@ class Employee:
         self.name = name
         self.salary = salary
         self.email = email
+        self.data_connector = 'some object'
         self.validate()
         self.save_email()  # -> write email to file
 
